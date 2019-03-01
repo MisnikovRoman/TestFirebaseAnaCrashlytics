@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../AnalyticsFramework/Framework/TestFirebaseFramework/TestFirebaseFramework.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:FirebaseTest.xcodeproj">
    </FileRef>
    <FileRef
