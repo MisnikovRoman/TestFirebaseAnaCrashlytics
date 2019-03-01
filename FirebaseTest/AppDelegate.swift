@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 import Fabric
 import Crashlytics
 
@@ -27,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
     func initializeAnalyticsFrameworks() {
         // Firebase
-        FirebaseApp.configure()
+        
         // Crashlytics
         Fabric.with([Crashlytics.self])
     }

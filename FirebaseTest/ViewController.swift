@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import Firebase
 import Crashlytics
+
 
 class ViewController: UIViewController {
     
@@ -30,17 +30,7 @@ class ViewController: UIViewController {
     }
     
     private func sendTestEvent(with title: String) {
-        Analytics.setScreenName("main.screen", screenClass: nil)
-        Analytics.logEvent(title, parameters: [
-            "name": "test_name" as NSObject,
-            "full_text": "test_text" as NSObject
-            ])
-        
-        let message = stringTextField.text ?? "NONE"
-        let number = Float(numberTextField.text ?? "0.0")!
-        
-        CLSLogv("%@", getVaList(["\(message)"]))
-        Crashlytics.sharedInstance().setFloatValue(number, forKey: "enteredNumber")
+       
     }
     
     private func crashApp() {
