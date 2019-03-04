@@ -14,7 +14,23 @@
 		CE17FB262228463000374973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE17FB252228463000374973 /* Assets.xcassets */; };
 		CE17FB292228463000374973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE17FB272228463000374973 /* LaunchScreen.storyboard */; };
 		CE17FB31222849C400374973 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE17FB30222849C400374973 /* GoogleService-Info.plist */; };
+		CE17FB4A2229B90900374973 /* TestFirebaseFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE17FB492229B90900374973 /* TestFirebaseFramework.framework */; };
+		CE17FB4B2229B90900374973 /* TestFirebaseFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE17FB492229B90900374973 /* TestFirebaseFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE17FB4C2229B90900374973 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE17FB4B2229B90900374973 /* TestFirebaseFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		07F87E31888D2F48BDB31A1F /* Pods-FirebaseTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseTest/Pods-FirebaseTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -28,6 +44,7 @@
 		CE17FB282228463000374973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE17FB2A2228463000374973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE17FB30222849C400374973 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE17FB492229B90900374973 /* TestFirebaseFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TestFirebaseFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE17FB4A2229B90900374973 /* TestFirebaseFramework.framework in Frameworks */,
 				853A8A67345D7A611CB5203B /* Pods_FirebaseTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +80,7 @@
 		CE17FB122228462E00374973 = {
 			isa = PBXGroup;
 			children = (
+				CE17FB492229B90900374973 /* TestFirebaseFramework.framework */,
 				CE17FB1D2228462E00374973 /* FirebaseTest */,
 				CE17FB1C2228462E00374973 /* Products */,
 				8F622E547DD7DB8240C0A5D5 /* Pods */,
@@ -104,6 +123,7 @@
 				CE17FB192228462E00374973 /* Resources */,
 				2CD215E147954847B4BA1F8E /* [CP] Embed Pods Frameworks */,
 				CE17FB322228512100374973 /* ShellScript */,
+				CE17FB4C2229B90900374973 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
